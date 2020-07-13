@@ -60,3 +60,16 @@ body {
   padding: 70px;
   font-size: 1.2rem;
 }
+
+
+
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
