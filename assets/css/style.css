@@ -61,6 +61,20 @@ body {
   font-size: 1.2rem;
 }
 
+/* for query1 */
+#query1{
+  background-color: blue;
+}
+
+/* for logo */
+#logo{
+  background-color: yellow;
+}
+
+.new-edit{
+  margin: 120px;
+}
+
 <<<<<<< HEAD
 /* Style all font awesome icons */
 .fa {
@@ -70,7 +84,8 @@ width: 50px;
 text-align: center;
 text-decoration: none;
  border-radius: 100%;
- margin-right: 20px
+ margin-right: 20px;
+
 }
 
 /* Add a hover effect if you want */
