@@ -61,6 +61,7 @@ body {
   font-size: 1.2rem;
 }
 
+<<<<<<< HEAD
 /* Style all font awesome icons */
 .fa {
 padding: 20px;
@@ -103,4 +104,17 @@ color: white;
 .fa-phone {
   background: #007bb5;
   color: white;
+=======
+
+
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+>>>>>>> 37d8c24288d2525f7bc51ae202c6e619a389f7c0
 }
