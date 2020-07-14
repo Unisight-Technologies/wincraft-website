@@ -75,7 +75,6 @@ body {
   margin: 120px;
 }
 
-<<<<<<< HEAD
 /* Style all font awesome icons */
 .fa {
 padding: 20px;
@@ -83,7 +82,7 @@ font-size: 100px;
 width: 50px;
 text-align: center;
 text-decoration: none;
- border-radius: 100%;
+ border-radius: 250px;
  margin-right: 20px;
 
 }
