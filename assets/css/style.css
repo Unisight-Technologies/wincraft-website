@@ -58,7 +58,7 @@ iframe{
 
 /* for logo */
 #logo{
-  background-color: yellow;
+  background-color: white;
 }
 
 .new-edit{
@@ -119,5 +119,8 @@ color: white;
     height:auto;
     display:block;
     z-index:999;
->>>>>>> 37d8c24288d2525f7bc51ae202c6e619a389f7c0
+}
+
+.font-black{
+  color: black;
 }
