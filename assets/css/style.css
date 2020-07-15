@@ -41,7 +41,7 @@ iframe{
      position: absolute;
      z-index: 500;
      opacity: 0.4;
-     background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?iq=100&fm=jpg&w=1000);
+     background-image: url(https://www.galeriemagazine.com/wp-content/uploads/2019/01/Dining_3-1024x674.jpg);
    }
 
    .stuff {
@@ -61,12 +61,12 @@ iframe{
 }
 /* for query1 */
 #query1{
-  background-color: black;
+  background-color: #7d7d7d;
 }
 
 /* for logo */
 #logo{
-  background-color: grey;
+  background-color: black;
 }
 
 .new-edit{
