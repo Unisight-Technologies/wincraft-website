@@ -32,6 +32,10 @@ body{
 
 }
 
+.main-heading {
+  color: black;
+}
+
 #my-img{
   width: 350px;
  position: absolute;
