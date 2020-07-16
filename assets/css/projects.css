@@ -41,6 +41,14 @@ p{
     -ms-transform: translate(0,40px);
     -o-transform: translate(0,40px);
 }
+
+.my-img:hover ~ .add-on{
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,40px);
+    -ms-transform: translate(0,40px);
+    -o-transform: translate(0,40px);
+}
+
 .main{
 
   overflow: hidden;
