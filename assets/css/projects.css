@@ -1,20 +1,38 @@
 body{
-  background-color: grey;
+  background-color: white;
 }
 
 .head-commercial{
   text-align: center;
+  color: black;
 }
 
 .add-on{
   padding-bottom:5px;
   margin-top: 40%;
-  width: 200px;
+  width: 300px;
     webkit-transform: translate(0,40px);
-    transform: translate(0,40px);
+    transform: translate(0,60px);
     transition: transform .3s ease;
-  background-color: black;
+  background-color: white;
+  color: black;
 
+}
+
+p{
+  color: black;
+}
+
+.main-heading{
+  color: black;
+}
+
+.embedded-1{
+  margin: 0;
+}
+
+.embedded-2{
+  margin: 15px;
 }
 
 .add-on:hover{
@@ -24,22 +42,27 @@ body{
     -o-transform: translate(0,40px);
 }
 .main{
+
   overflow: hidden;
   width: 350px;
   border-bottom: solid 2px black;
   position: relative;
     background-color: grey;
-
+    height: 233px;
 }
 
-.main-heading {
-  color: black;
-}
-
-#my-img{
+.my-img{
   width: 350px;
  position: absolute;
 }
+
+.my-img:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+  width: 400px;
+
+}
+
 
 .retail-project{
   margin-top: 100px;
