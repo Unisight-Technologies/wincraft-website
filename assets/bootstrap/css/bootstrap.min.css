@@ -157,7 +157,7 @@ a {
 }
 
 a:hover {
-  color: #21b17b;
+  color: black;
   text-decoration: underline
 }
 
@@ -10067,18 +10067,19 @@ p {
   p {
     font-size: 18px;
     line-height: 1.6;
-    margin: 0 0 35px
+    margin: 0 0 35px;
+    font-family: 'Raleway', sans-serif;
   }
 }
 
 a {
   transition: all .2s ease-in-out;
-  color: #42dca3
+  color: #0295DA;
 }
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #1d9b6c
+  color: black;
 }
 
 #mainNav {
@@ -10238,16 +10239,17 @@ a:focus, a:hover {
 }
 
 .btn-default {
-  color: #42dca3;
-  border: 1px solid #42dca3;
-  background-color: transparent
+  color: white;
+  border: 1px solid #0295DA;
+  outline: none;
+  background-color: #0295DA;
+  border-radius: 30px;
 }
 
 .btn-default:focus, .btn-default:hover {
-  color: #000;
-  border: 1px solid #42dca3;
-  outline: none;
-  background-color: #42dca3
+  color: #0295DA;
+  border: 1px solid #0295DA;
+  background-color: transparent;
 }
 
 ul.banner-social-buttons {

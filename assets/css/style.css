@@ -21,6 +21,19 @@ iframe{
   }
 }
 
+#home{
+  background-color: black;
+}
+
+#download{
+  color: black;
+}
+
+#logo, #query1{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
 .main-header{
   height: 800px;
 }
@@ -61,7 +74,7 @@ iframe{
 }
 /* for query1 */
 #query1{
-  background-color: #7d7d7d;
+  background-color: #0295DA;
 }
 
 /* for logo */
@@ -69,8 +82,8 @@ iframe{
   background-color: black;
 }
 
-.new-edit{
-  margin: 120px;
+input{
+  border-radius: 5px;
 }
 
 /* Style all font awesome icons */
@@ -130,4 +143,12 @@ color: white;
 
 .font-black{
   color: black;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3{
+  font-family: 'Raleway', sans-serif;
 }
