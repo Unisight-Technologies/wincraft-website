@@ -92,10 +92,10 @@ body { font-family: sans-serif; }
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white;
+  fill: black;
 }
 .flickity-prev-next-button.no-svg {
-  color: white;
+  color: black;
 }
 /* closer to edge */
 .flickity-prev-next-button.previous { left: 0; }
