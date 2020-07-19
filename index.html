@@ -20,9 +20,13 @@
   <link rel="stylesheet" href="assets/css/carousel.css">
   <script src="https://kit.fontawesome.com/f2148c770f.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/script.min.js">
-   
+
   </script>
-     <link rel="stylesheet" href="assets/css/counter.css">
+  <link rel="stylesheet" href="assets/css/counter.css">
+  <link rel="stylesheet" href="assets/css/fadein.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body id="page-top">
@@ -56,9 +60,9 @@
     </div>
   </section>
   <section id="about" class="content-section text-center">
-    <div class="container">
+    <div class="container fade-in">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-8 mx-auto item" data-aos="fade-up">
           <h2>About Wincraft</h2>
           <p> Fabricators of uPVC,Aluminium,Minimal Aluminium Systems
             <br>Glass Facades and Aluminium Composite Panel Works </p>
@@ -69,7 +73,7 @@
   </section>
   <section id="download" class="download-section content-section text-center" style="background-image:url('assets/img/product-img1.jpg');">
     <div class="container">
-      <div class="col-lg-8 mx-auto">
+      <div class="col-lg-8 mx-auto" data-aos="fade-up">
         <h1>Product Catalogue</h1>
         <p>You can download product catalogue for free on the products page.</p>
         <a href="hover.html" class="btn btn-primary btn-lg btn-default">PRODUCTS</a>
@@ -80,7 +84,7 @@
   </section>
 
   <section id="logo" class="content-section text-center">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div>
         <h1 style="color: black">BRANDS</h1>
       </div>
@@ -112,7 +116,7 @@
   <section id="query1" class="content-section text-center">
     <div class="container">
 
-      <div class="col-lg-8 mx-auto">
+      <div class="col-lg-8 mx-auto hideme">
         <h1 class="new-edit">Query</h1>
 <!--<div class="w3-container w3-padding-32" id="contact">-->
     <p>Lets get in touch and talk about your next project.</p>
@@ -129,42 +133,37 @@
       </div>
   </section>
 <!--Up counter-->
-    <section id="counter" >
-<!--        <div class="container">-->
-        <div class="row">
-        <div id="block">
-      <div class="container">
-        <div class="column-center">
-
-          <div id="updateNum2"></div>
-            
-          <div id="row2">
-            Number of Specimens
+  <section id="counter" >
+    <div style="margin-right: 0px;" class="row">
+      <div id="block">
+        <div class="container">
+              <div class="column-center">
+                <div id="updateNum2"></div>
+                <div id="row2">
+                  Number of Specimens
+                </div>
+              </div>
+              <div class="column-left">
+                <div id="updateNum1"></div>
+                <div id="row1">
+                  Number of Species
+                </div>
+              </div>
+              <div class="column-right">
+                <div id="updateNum3"></div>
+                <div id="row3">
+                  Number of Partners
+                </div>
+              </div>
           </div>
         </div>
-        <div class="column-left">
-          <div id="updateNum1"></div>
-          <div id="row1">
-            Number of Species
-          </div>
-
-        </div>
-        <div class="column-right">
-          <div id="updateNum3"></div>
-          <div id="row3">
-            Number of Partners
-          </div>
-        </div>
-</div>
       </div>
-</div>
-<!-- </div>  -->
     </section>
 
   <section id="contact" class="content-section text-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-8 mx-auto" data-aos="fade-up">
           <h2>Contact us</h2>
           <p>Feel free to leave us a comment on the<a href="#">&nbsp;social media pages or website query page</a>&nbsp;to give some feedback or order regarding our producs </p>
             <a href="#" class="fa fa-facebook footer-icon"></a>
@@ -199,6 +198,12 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <!--    counter-->
  <script type="text/javascript" src="assets/js/counter.js"></script>
+
+ <script type="text/javascript" src="assets/js/fadein.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
