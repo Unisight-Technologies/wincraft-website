@@ -1,0 +1,56 @@
+#review {
+  margin-top: 40px;
+}
+
+.review-heading {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.container-review {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 46px 20px;
+}
+
+.container-review img {
+  float: left;
+  margin-right: 35px;
+  border-radius: 50%;
+}
+
+.container-review-heading {
+  font-size: 20px;
+  color: black;
+}
+
+.container-review-content {
+  color: black;
+}
+
+/* Adding media queries for responsiveness. */
+@media (max-width: 500px) {
+  .container-review {
+    text-align: center;
+  }
+
+  .container-review img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+.icon-heading {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.container-icon {
+  height: 250px;
+}
