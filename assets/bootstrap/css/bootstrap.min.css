@@ -4046,6 +4046,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;
+  background-color: black;
+  padding: 10px;
   flex-basis: 100%;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -10087,7 +10089,8 @@ a:focus, a:hover {
   margin-bottom: 0;
   text-transform: uppercase;
   border-bottom: 1px solid hsla(0, 0%, 100%, .3);
-  background-color: #000
+  background-color: #000;
+  padding: 0px;
 }
 
 #mainNav .navbar-toggler {
@@ -10098,7 +10101,8 @@ a:focus, a:hover {
 }
 
 #mainNav .navbar-brand {
-  font-weight: 700
+  font-weight: 700;
+  padding: 15px;
 }
 
 #mainNav a {
