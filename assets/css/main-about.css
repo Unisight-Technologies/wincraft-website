@@ -2941,7 +2941,6 @@
 	#header {
 		color: #a6a6a6;
 		cursor: default;
-		position: relative;
 		text-align: center;
 		z-index: 10001;
 		margin-top: 250px;
@@ -3164,6 +3163,23 @@
 
 			#footer {
 				padding: 1rem 0 0.1rem 0 ;
+			}
+
+		}
+
+		/* custom code */
+		@media screen and (max-width: 736px) {
+
+			#header{
+				margin-top: 50px;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			body{
+				background-image: auto;
 			}
 
 		}
