@@ -1,0 +1,10 @@
+.blue-line:hover {
+  border-bottom: #0295DA solid 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .blue-line:hover {
+    border-bottom: #0295DA solid 2px;
+    width: 30%;
+  }
+}
