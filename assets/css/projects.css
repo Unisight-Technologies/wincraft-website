@@ -5,6 +5,7 @@ body{
 .head-commercial{
   text-align: center;
   color: black;
+  padding-top: 50px;
 }
 
 .add-on{
@@ -53,7 +54,7 @@ p{
 
   overflow: hidden;
   width: 350px;
-  border-bottom: solid 2px black;
+  border-bottom: solid 5px #0295DA;
   position: relative;
     background-color: grey;
 
