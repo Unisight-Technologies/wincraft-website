@@ -12,7 +12,7 @@ body{
   margin-top: 40%;
   width: 300px;
     webkit-transform: translate(0,40px);
-    transform: translate(0,60px);
+    transform: translate(0,30px);
     transition: transform .3s ease;
   background-color: white;
   color: black;
@@ -56,7 +56,7 @@ p{
   border-bottom: solid 2px black;
   position: relative;
     background-color: grey;
-    height: 233px;
+
 }
 
 .my-img{
@@ -80,5 +80,11 @@ p{
   .col{
     margin-bottom: 50px;
     width: 350px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main{
+    width: auto;
   }
 }

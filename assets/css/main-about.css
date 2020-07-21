@@ -1639,10 +1639,6 @@
 		line-height: 1.65;
 	}
 
-	a {
-		text-decoration: underline;
-	}
-
 		a:hover {
 			text-decoration: none;
 		}
@@ -2952,6 +2948,7 @@
 		position: relative;
 		text-align: center;
 		z-index: 10001;
+		margin-top: 250px;
 	}
 
 		#header > .logo {
