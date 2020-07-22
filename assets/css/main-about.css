@@ -81,9 +81,9 @@
 		width: 20rem;
 	}
 
-	.container {
+	/* .container {
 		width: 80rem;
-	}
+	} */
 
 	@media screen and (max-width: 1680px) {
 
@@ -105,9 +105,9 @@
 			width: 20rem;
 		}
 
-		.container {
+		/* .container {
 			width: 80rem;
-		}
+		} */
 
 	}
 
@@ -131,9 +131,9 @@
 			width: 16.25rem;
 		}
 
-		.container {
+		/* .container {
 			width: 65rem;
-		}
+		} */
 
 	}
 
@@ -2943,7 +2943,7 @@
 		cursor: default;
 		text-align: center;
 		z-index: 10001;
-		margin-top: 250px;
+		margin-top: 200px;
 	}
 
 		#header > .logo {
