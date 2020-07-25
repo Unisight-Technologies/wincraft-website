@@ -28,12 +28,17 @@
   <link rel="stylesheet" href="assets/css/fadein.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/loader.css">
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
-<body id="page-top">
+
+
+
+<body id="page-top" onload="loaded()">
+<div class="page" style="display: none;">
 
 
   <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
@@ -225,10 +230,13 @@
 
  <script type="text/javascript" src="assets/js/fadein.js"></script>
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script type="text/javascript" src="assets/js/loader.js"></script>
   <script>
     AOS.init();
-  </script>
 
+  </script>
+</div>
+<div class="loader"id="loader">Loading...</div>
 </body>
 
 </html>
