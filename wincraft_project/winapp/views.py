@@ -11,3 +11,9 @@ class ProjectsPage(View):
     def get(self, request, *args, **kwargs):
 
         return render(request, 'projects.html')
+    
+class AboutPage(View):
+
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'about.html')    
