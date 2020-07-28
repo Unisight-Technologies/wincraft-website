@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="{% static 'assets/css/index.css' %}">
     <link rel="stylesheet"  href="{% static 'assets/css/loader.css' %}">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
 </head>
 <body id="page-top" onload="loaded()">
@@ -45,12 +45,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger blue-line" href="index.html">Home</a></li>
+                        <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger blue-line" href="{% url 'index' %}">Home</a></li>
                         <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger blue-line" href="temp.html">Products</a></li>
-                        <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link blue-line" href="projects.html">Projects</a></li>
+                        <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link blue-line" href="{% url 'projects' %}">Projects</a></li>
                         <!-- <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#query1">Query</a></li> -->
                         <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link blue-line" href="temp.html">Certification</a></li>
-                        <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger blue-line" href="about.html">About us</a></li>
+                        <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger blue-line" href="{% url 'about' %}">About us</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,7 +60,7 @@
         {% block body_block %}
         {% endblock %}
 
-        
+
 
     </div>
     <div class="loader" id="loader">Loading...</div>

@@ -1,5 +1,5 @@
 ﻿{% extends 'base.html' %}
-
+{% load static %}
 
 {% block body_block %}
 
@@ -33,7 +33,7 @@
       </div>
     </div>
   </section>
-  <section id="download" class="download-section content-section text-center" style="background-image: url('assets/img/product-img1.jpg')">
+  <section id="download" class="download-section content-section text-center" style="background-image: url('{% static 'assets/img/product-img1.jpg' %}')">
     <div class="container">
       <div style="
       background-color: black;
@@ -162,4 +162,3 @@
 </section>
 
  {% endblock %}
-

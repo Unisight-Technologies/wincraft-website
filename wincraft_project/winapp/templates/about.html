@@ -1,5 +1,8 @@
-{% extends 'base.html' %}	
+{% extends 'base.html' %}
 {% block body_block %}
+{% load static %}
+
+<link rel="stylesheet"  href="{% static 'assets/css/about.css' %}">
 <!-- Header -->
 			<header id="header">
 				<div class="logo"><h1 style="color: white; font-size: 50px;">About Us</h1></div>
@@ -132,4 +135,3 @@
 			 </div>
                 </section>
 {% endblock %}
-	

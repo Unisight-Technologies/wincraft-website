@@ -1,6 +1,6 @@
-body{
+/* body{
   background-color: black;
-}
+} */
 
 .head-commercial{
   text-align: center;
@@ -20,9 +20,9 @@ body{
 
 }
 
-p{
+/* p{
   color: black;
-}
+} */
 
 .main-heading{
   color: black;
@@ -89,4 +89,3 @@ p{
     width: auto;
   }
 }
-
