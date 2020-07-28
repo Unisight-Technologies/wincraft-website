@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
-{% block body_block %}
 {% load static %}
-
-<link rel="stylesheet"  href="{% static 'assets/css/about.css' %}">
+{% block body_block %}
 <!-- Header -->
 			<header id="header">
 				<div class="logo"><h1 style="color: white; font-size: 50px;">About Us</h1></div>
@@ -16,7 +14,7 @@
 					<section id="one" class="wrapper style1">
 
 						<div class="image fit flush">
-							<img src="images/img2.jpg" alt="" />
+							<img src= '{% static 'images/img2.jpg' %}' alt="" />
 						</div>
 						<header class="special">
 							<h2>Wincraft Buildmat</h2>
