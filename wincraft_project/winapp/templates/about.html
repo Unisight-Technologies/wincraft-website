@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block body_block %}
+
+<link rel="stylesheet"  href="{% static 'assets/css/about.css' %}">
 <!-- Header -->
 			<header id="header">
 				<div class="logo"><h1 style="color: white; font-size: 50px;">About Us</h1></div>
@@ -38,7 +40,7 @@
 				<!-- Three -->
 					<section id="three" class="wrapper">
 						<div class="spotlight">
-							<div class="image flush"><img src="images/img1.jpg" alt="" /></div>
+							<div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
 							<div class="inner">
 								<h3>About the Founder</h3>
 								<p></p>
@@ -68,7 +70,8 @@
 							<h3 class="review-heading">Customer reviews</h3>
 
 							<div class="container-review">
-								<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt="" width="250" height="150" class="aligncenter size-full wp-image-1271664" alt="Avatar" style="width:180px" />"
+								<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+								width="150" height="150" class="aligncenter size-full wp-image-1271664" alt="Avatar" style="width:150px">
     						<p class="container-review-heading"><span>Chris Doe</span>, CEO at XYZ.</p>
 					    	<p class="container-review-content">"A Computer Science graduate who likes to make things simpler.
 					      When he's not working, you can find him surfing the web,
@@ -77,7 +80,8 @@
 							</div>
 
 							<div class="container-review">
-								<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt="" width="250" height="150" class="aligncenter size-full wp-image-1271664" alt="Avatar" style="width:180px" />"
+								<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+								width="150" height="150" class="aligncenter size-full wp-image-1271664" alt="Avatar" style="width:150px">
     						<p class="container-review-heading"><span>Chris Doe</span>, CEO at ABC.</p>
 					    	<p class="container-review-content">"A Computer Science graduate who likes to make things simpler.
 					      When he's not working, you can find him surfing the web,
@@ -86,7 +90,8 @@
 							</div>
 
 							<div class="container-review">
-								<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt="" width="250" height="150" class="aligncenter size-full wp-image-1271664" alt="Avatar" style="width:180px" />"
+								<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+								width="150" height="150" class="aligncenter size-full wp-image-1271664" alt="Avatar" style="width:150px">
     						<p class="container-review-heading"><span>Chris Doe</span>, CEO at EFG.</p>
 					    	<p class="container-review-content">"A Computer Science graduate who likes to make things simpler.
 					      When he's not working, you can find him surfing the web,

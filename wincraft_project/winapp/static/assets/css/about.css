@@ -2,6 +2,10 @@
   margin-top: 40px;
 }
 
+h1, h2{
+  color: black;
+}
+
 .review-heading {
   text-align: center;
   font-size: 1.75rem;
@@ -10,10 +14,11 @@
 }
 
 .container-review {
-  background-color: #eee;
+  background-color: rgba(2, 149, 218, 0.1);
   border-radius: 5px;
   padding: 25px;
   margin: 46px 20px;
+  height: 230px;
 }
 
 .container-review img {
@@ -106,4 +111,8 @@ color: white;
 .fa-phone {
   background: #a4c639;
   color: white;
+}
+
+.aligncenter{
+  border: #0295DA 2px solid;
 }
