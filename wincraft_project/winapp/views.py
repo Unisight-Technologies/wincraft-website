@@ -9,7 +9,6 @@ class Homepage(View):
         return render(request, 'index.html')
 
     def post(self, request, *args, **kwargs):
-        if request.method == "POST":
             form = request.POST
             name = form.get('name')
             email_phone = form.get('email_phone')
@@ -23,18 +22,17 @@ class Homepage(View):
                 )
                 new_query.save()
                 messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
-                return redirect("index.html")
+                return redirect("index")
 
             else:
                 new_query = models.Queries.objects.create(
-                name=name,
-                phone=email_phone,
-                query=query
+                    name=name,
+                    phone=email_phone,
+                    query=query
                 )
                 new_query.save()
                 messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
-                return redirect("index.html")
-        return render(request, 'index.html')
+                return redirect("index")
 
 class ProjectsPage(View):
 

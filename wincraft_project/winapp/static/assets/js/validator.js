@@ -14,19 +14,37 @@ function validateData(){
     // Check if email
     if (flag>0){
           if (flag == 2){
+
+            for (var i=0;i<phone_email.length;i++){
+              if(phone_email[i] == phone_email[i].toUpperCase()){
+                alert("Please enter a valid email!");
+                return false;
+              }
+            }
             document.getElementById('query-form-id').submit();
+            return true;
           }
           else{
             alert("Please enter a valid email!");
+            return false;
           }
     }
     // Check if phone number
     else{
           if(phone_email.length == 10){
-            document.getElementById('query-form-id').submit();
+            if (!isNaN(phone_email)){
+
+              document.getElementById('query-form-id').submit();
+              return true;
+            }
+            else{
+              alert("Please enter a valid phone number");
+              return false;
+            }
           }
           else{
             alert("Please enter a valid phone number");
+            return false;
           }
     }
 }

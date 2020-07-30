@@ -40,7 +40,7 @@
                         </div>
                   <!-- alert-messages-ends -->
 
-                  
+
       <div class="row">
         <div class="col-lg-8 mx-auto item" data-aos="fade-up">
           <h2>About Wincraft</h2>
@@ -106,12 +106,12 @@
         <h1 class="new-edit">Any Queries ?</h1>
 <!--<div class="w3-container w3-padding-32" id="contact">-->
     <p>Lets get in touch and talk about your next project.</p>
-    <form id="query-form-id" name="query-form" method="POST">{% csrf_token %}
+    <form id="query-form-id" name="query-form" method="POST" onsubmit="return validateData()">{% csrf_token %}
 
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="name">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Phone number/Email" required name="email_phone">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Query" required name="query">
-      <button style="background-color: black;" class="btn btn-primary btn-lg btn-default" type="submit" onclick="validateData()">
+      <button style="background-color: black;" class="btn btn-primary btn-lg btn-default" type="submit">
         <i class="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
     </form>
@@ -179,7 +179,5 @@
 
 </div>
 </section>
-
-<script type="text/javascript" src="{% static 'assets/js/validator.js' %}"></script>
 
  {% endblock %}
