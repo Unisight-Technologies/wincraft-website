@@ -25,7 +25,7 @@ SECRET_KEY = '8gpu8k)x=-j^)s7j9@&)8cd@^e&$82d-uz%_=(t&zpjmucd$(n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.43.64']
 
 
 # Application definition
