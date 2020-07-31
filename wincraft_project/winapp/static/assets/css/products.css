@@ -1,0 +1,20 @@
+
+.wrapper{
+  text-align: center;
+}
+
+h4, p{
+  color: white;
+}
+
+.mid{
+
+}
+
+.category-img{
+  border-radius: 50%;
+}
+
+.prod-one, .prod-two, .prod-three{
+  display: none;
+}

@@ -45,3 +45,8 @@ class AboutPage(View):
     def get(self, request, *args, **kwargs):
 
         return render(request, 'about.html')
+
+class ProductsPage(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(request, 'products.html')
