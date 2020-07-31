@@ -10,3 +10,9 @@ h2, h1{
 #page-top{
   background-color: black;
 }
+
+/* dropdown navbar colors */
+
+.dropdown-item:hover {
+  color: #0295da;
+}
