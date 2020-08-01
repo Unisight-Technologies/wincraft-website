@@ -3196,7 +3196,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .dropdown-menu.show {
-  display: block
+  display: block;
+  background-color: black;
 }
 
 .dropdown-header {
@@ -4038,7 +4039,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
 .navbar-nav .dropdown-menu {
   position: static;
-  float: none
+  float: none;
+  background-color: black;
 }
 
 .navbar-text {

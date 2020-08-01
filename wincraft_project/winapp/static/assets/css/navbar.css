@@ -8,3 +8,7 @@
     width: 30%;
   }
 }
+
+.dropdown-item{
+  transition: none;
+}
