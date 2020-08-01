@@ -15,12 +15,12 @@ function validateData(){
     if (flag>0){
           if (flag == 2){
 
-            for (var i=0;i<phone_email.length;i++){
-              if(phone_email[i] == phone_email[i].toUpperCase()){
-                alert("Please enter a valid email!");
-                return false;
-              }
-            }
+            // for (var i=0;i<phone_email.length;i++){
+            //   if(phone_email[i] == phone_email[i].toUpperCase()){
+            //     alert("Please enter a valid email!");
+            //     return false;
+            //   }
+            // }
             document.getElementById('query-form-id').submit();
             return true;
           }

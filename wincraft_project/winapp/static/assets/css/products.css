@@ -15,6 +15,29 @@ h4, p{
   border-radius: 50%;
 }
 
-.prod-one, .prod-two, .prod-three{
+#simta, #firat, #aluk{
   display: none;
+}
+
+/* .aluk:hover ~ .one{
+  border: #0295DA 2px solid;
+}
+
+.one{
+  text-align: center;
+} */
+
+.zoom:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
+  width: 400px;
+
+}
+
+.zoom{
+  width: 400px;
+}
+
+.fixed{
+  overflow: hidden;
 }

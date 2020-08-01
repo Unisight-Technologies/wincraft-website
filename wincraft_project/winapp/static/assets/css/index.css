@@ -16,3 +16,8 @@ h2, h1{
 .dropdown-item:hover {
   color: #0295da;
 }
+
+.alert{
+  padding: 20px;
+  margin: 0 auto;
+}

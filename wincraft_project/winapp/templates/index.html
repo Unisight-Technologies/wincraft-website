@@ -4,6 +4,20 @@
 {% block body_block %}
 
   <header id="header">
+    <!-- alert-messages -->
+                      <div style="width:100%" class="row">
+                        {% if messages %}
+                            {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                          {{ message }}
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                            {% endfor %}
+                        {% endif %}
+                      </div>
+                <!-- alert-messages-ends -->
     <div class="logo"><h1 style="color: white; font-size: 45px;">WINCRAFT BUILDMAT</h1>
     <p style=" font-size: 30px;
     font-family: Times New Roman;
@@ -24,23 +38,6 @@
   <section id="about" class="content-section text-center">
 
     <div class="container fade-in">
-
-      <!-- alert-messages -->
-                        <div style="width:100%" class="row">
-                          {% if messages %}
-                              {% for message in messages %}
-                              <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
-                            {{ message }}
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                              {% endfor %}
-                          {% endif %}
-                        </div>
-                  <!-- alert-messages-ends -->
-
-
       <div class="row">
         <div class="col-lg-8 mx-auto item" data-aos="fade-up">
           <h2>About Wincraft</h2>
