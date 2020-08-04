@@ -105,9 +105,10 @@
     <p style="color:white">Lets get in touch and talk about your next project.</p>
     <form id="query-form-id" name="query-form" method="POST" onsubmit="return validateData()">{% csrf_token %}
 
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="name" style="color:black">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Phone number/Email" required name="email_phone" style="color:black">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Query" required name="query" style="color:black">
+      <input class="w3-input" type="text" placeholder="Name" required name="name" style="color:black">
+      <input class="w3-input w3-section" type="text" placeholder="Phone number/Email" required name="email_phone" style="color:black">
+      <!-- < class="w3-input w3-section" type="text" placeholder="Query" required name="query" style="color:black"> -->
+      <textarea class="w3-section" type="text" name="query" required rows="8" cols="80" placeholder="Your query"></textarea>
       <button style="background-color: black;" class="btn btn-primary btn-lg btn-default" type="submit">
         <i class="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
