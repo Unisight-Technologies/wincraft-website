@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body_block %}
+
+  <link rel="stylesheet" href="{% static 'assets/css/products.css' %}">
+<!-- Header -->
+  <header id="header">
+    <div class="logo"><h1 style="color: white; font-size: 50px;">Our Products</h1></div>
+  </header>
+
+    <!-- Main -->
+  <section id="main">
+    <div class="inner">
+
+      <!-- Two -->
+        <section id="two" class="wrapper style2">
+          <header class="product-brands">
+            <div class="row">
+              <div onclick="showContent('aluk')" class="col aluk">
+                  <div class="fixed">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 one zoom" alt="Avatar" style="width:150px">
+                  </div>
+
+                <h4>Aluk</h4>
+                <p>Aluminum and uPVC doors and windows</p>
+              </div>
+              <div onclick="showContent('simta')" class="col mid simta">
+                  <div class="fixed">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 two zoom" alt="Avatar" style="width:150px">
+
+                  </div>
+
+                <h4>Simta</h4>
+                <p>Aluminum and uPVC doors and windows</p>
+              </div>
+              <div onclick="showContent('firat')" class="col firat">
+                  <div class="fixed">
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 three zoom" alt="Avatar" style="width:150px">
+                  </div>
+
+                <h4>Firat</h4>
+                <p>Aluminum and uPVC doors and windows</p>
+              </div>
+            </div>
+
+          </header>
+        </section>
+
+
+      <!-- Aluk -->
+        <section id="aluk" class="wrapper">
+          <div class="spotlight">
+            <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
+            <div class="inner">
+              <h3>About the Founder</h3>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="spotlight alt">
+            <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
+            <div  class="inner">
+              <h3>Curabitur Eget</h3>
+              <p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Simta -->
+          <section id="simta" class="wrapper">
+            <div class="spotlight">
+              <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
+              <div class="inner">
+                <h3>About the Founder</h3>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="spotlight alt">
+              <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
+              <div  class="inner">
+                <h3>Curabitur Eget</h3>
+                <p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Firat -->
+            <section id="firat" class="wrapper">
+              <div class="spotlight">
+                <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
+                <div class="inner">
+                  <h3>About the Founder</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="spotlight alt">
+                <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
+                <div  class="inner">
+                  <h3>Curabitur Eget</h3>
+                  <p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
+                </div>
+              </div>
+            </section>
+
+
+            <section style="background-color: black;
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+
+            " id="contact" class="content-section text-center">
+              <div class="">
+                <div class="">
+                  <div class="col-lg-8 mx-auto">
+                    <h2 style="color: white;">Contact us</h2>
+                    <p style="color: white;">Feel free to leave us a comment on the social media pages or website query page
+                      &nbsp;to give some feedback or order regarding our products </p>
+                      <a href="#" class="fa fa-facebook footer-icon"></a>
+                      <a href="#" class="fa fa-instagram footer-icon"></a>
+                      <a href="#" class="fa fa-linkedin footer-icon"></a>
+                      <a href="#" class="fa fa-envelope footer-icon"></a>
+                      <a href="#" class="fa fa-phone footer-icon"></a>
+
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer style="background-color: black; padding-bottom: 10px;">
+                <div class="container text-center">
+                  <p style="color:white;">Copyright ©&nbsp;Wincraft-Website</p>
+                </div>
+              </footer>
+
+    </div>
+  </section>
+
+<script type="text/javascript" src="{% static 'assets/js/products.js' %}"></script>
+
+{% endblock %}
