@@ -116,18 +116,19 @@
                             </li>
                             <li><a class="dropdown-item" href="#">Super Specialised System &raquo </a>
                                <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href="{% url 'winapp:casement' %}">Lift & Slide</a></li>
-                                <li><a class="dropdown-item" href="{% url 'winapp:casement' %}">Tilt & Turn</a></li>
-                                <li><a class="dropdown-item" href="{% url 'winapp:casement' %}">Slide & Fold</a></li>
+                                <li><a class="dropdown-item" href="{% url 'winapp:lift' %}">Lift & Slide</a></li>
+                                <li><a class="dropdown-item" href="{% url 'winapp:tilt' %}">Tilt & Turn</a></li>
+                                <li><a class="dropdown-item" href="{% url 'winapp:slide' %}">Slide & Fold</a></li>
                              </ul>
                             </li>
-                            <li><a class="dropdown-item" href="#">Slimline Aluminium &raquo </a>
-                              <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'winapp:slimline' %}">Slimline Aluminium</a>
+                              <!-- <ul class="submenu dropdown-menu">
                                <li><a class="dropdown-item" href="{% url 'winapp:casement' %}">AluK Infinium</a></li>
                                <li><a class="dropdown-item" href="{% url 'winapp:casement' %}">Slim Alu Corp</a></li>
-                              </ul>
+                              </ul> -->
                             </li>
-                            <li><a class="dropdown-item" href="">Curtain Wall System &raquo </a>
+                            <li><a class="dropdown-item" href="{% url 'winapp:curtain' %}">Curtain Wall System</a></li>
+                            <li><a class="dropdown-item" href="#">Glass Work(ACP)</a></li>
                             </ul>
                         </li>
                         <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link blue-line" href="{% url 'projects' %}">Projects</a></li>
