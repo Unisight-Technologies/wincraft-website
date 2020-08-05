@@ -4,6 +4,17 @@
 {% block body_block %}
 
   <link rel="stylesheet" href="{% static 'assets/css/products.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+  $(".fixed").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#aluk").offset().top
+    }, 2000);
+  });
+  </script>
+
+
 <!-- Header -->
   <header id="header">
     <div class="logo"><h1 style="color: white; font-size: 50px;">Curtain Wall System</h1></div>
@@ -19,8 +30,8 @@
             <div class="row">
               <div onclick="showContent('aluk')" class="col aluk">
                   <div class="fixed">
-                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
-                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 one zoom" alt="Avatar" style="width:150px">
+                    <a href="#aluk"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 one zoom" alt="Avatar" style="width:150px"></a>
                   </div>
 
                 <h4>Semi Unitized</h4>
