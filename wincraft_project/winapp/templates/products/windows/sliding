@@ -4,36 +4,9 @@
 {% block body_block %}
 
   <link rel="stylesheet" href="{% static 'assets/css/products.css' %}">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 <!-- Header -->
   <header id="header">
-    <div class="logo"><h1 style="color: white; font-size: 50px;">Casement</h1></div>
+    <div class="logo"><h1 style="color: white; font-size: 50px;">Our Products</h1></div>
   </header>
 
     <!-- Main -->
@@ -46,8 +19,8 @@ $(document).ready(function(){
             <div class="row">
               <div onclick="showContent('aluk')" class="col aluk">
                   <div class="fixed">
-                  <a href="#aluk"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
-                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 one zoom" alt="Avatar" style="width:150px"></a>
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 one zoom" alt="Avatar" style="width:150px">
                   </div>
 
                 <h4>Aluk</h4>
@@ -55,8 +28,8 @@ $(document).ready(function(){
               </div>
               <div onclick="showContent('simta')" class="col mid simta">
                   <div class="fixed">
-                    <a href="#simta"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
-                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 two zoom" alt="Avatar" style="width:150px"></a>
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 two zoom" alt="Avatar" style="width:150px">
 
                   </div>
 
@@ -66,8 +39,8 @@ $(document).ready(function(){
               <div onclick="showContent('firat')" class="col firat">
                   <div class="fixed">
 
-                  <a href="#firat"> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
-                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 three zoom" alt="Avatar" style="width:150px"></a>
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190921104515/download18.png" alt=""
+                    width="150" height="150" class="category-img aligncenter size-full wp-image-1271664 three zoom" alt="Avatar" style="width:150px">
                   </div>
 
                 <h4>Firat</h4>
@@ -84,7 +57,7 @@ $(document).ready(function(){
           <div class="spotlight">
             <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
             <div class="inner">
-              <h3>40N</h3>
+              <h3>About the Founder</h3>
               <p></p>
             </div>
           </div>
@@ -92,8 +65,8 @@ $(document).ready(function(){
           <div class="spotlight alt">
             <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
             <div  class="inner">
-              <h3>45DS</h3>
-              <p></p>
+              <h3>Curabitur Eget</h3>
+              <p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
             </div>
           </div>
         </section>
@@ -103,18 +76,18 @@ $(document).ready(function(){
             <div class="spotlight">
               <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
               <div class="inner">
-                <h3>Casement 60</h3>
+                <h3>About the Founder</h3>
                 <p></p>
               </div>
             </div>
 
-            <!-- <div class="spotlight alt">
+            <div class="spotlight alt">
               <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
               <div  class="inner">
                 <h3>Curabitur Eget</h3>
                 <p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
               </div>
-            </div> -->
+            </div>
           </section>
 
           <!-- Firat -->
@@ -122,7 +95,7 @@ $(document).ready(function(){
               <div class="spotlight">
                 <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
                 <div class="inner">
-                  <h3>Diamond 60</h3>
+                  <h3>About the Founder</h3>
                   <p></p>
                 </div>
               </div>
@@ -130,8 +103,8 @@ $(document).ready(function(){
               <div class="spotlight alt">
                 <div class="image flush"><img src="{% static 'images/img1.jpg' %}" alt="" /></div>
                 <div  class="inner">
-                  <h3>Andes 38</h3>
-                  <p></p>
+                  <h3>Curabitur Eget</h3>
+                  <p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel.</p>
                 </div>
               </div>
             </section>
