@@ -32,34 +32,7 @@
     <link rel="stylesheet"  href="{% static 'assets/css/loader.css' %}">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <script type="text/javascript">
-    /// some script
-
-    // jquery ready start
-    $(document).ready(function() {
-    	// jQuery code
-
-    	//////////////////////// Prevent closing from click inside dropdown
-        $(document).on('click', '.dropdown-menu', function (e) {
-          e.stopPropagation();
-        });
-
-        // make it as accordion for smaller screens
-        if ($(window).width() < 992) {
-    	  	$('.dropdown-menu a').click(function(e){
-    	  		e.preventDefault();
-    	        if($(this).next('.submenu').length){
-    	        	$(this).next('.submenu').toggle();
-    	        }
-    	        $('.dropdown').on('hide.bs.dropdown', function () {
-    			   $(this).find('.submenu').hide();
-    			})
-    	  	});
-    	}
-
-    }); // jquery end
-    </script>
-
+    
     <style type="text/css">
     	@media (min-width: 992px){
     		.dropdown-menu .dropdown-toggle:after{
@@ -101,7 +74,7 @@
     <div class="page" style="display: none;">
         <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
             <div class="container" style="background-color: black;">
-                <a class="navbar-brand js-scroll-trigger" href="#">Wincraft Buildmat</a>
+                <a class="navbar-brand js-scroll-trigger" href="{% url 'index' %}">Wincraft Buildmat</a>
                 <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button"
                         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu">
                     <i class="fa fa-bars"></i>
@@ -112,13 +85,13 @@
                         <li class="nav-item nav-link js-scroll-trigger dropdown show" role="presentation">
                           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PRODUCTS</a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Windows And Door System &raquo</a>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Windows And Door System</a>
                               <ul class="submenu dropdown-menu">
                                <li><a class="dropdown-item" href="{% url 'winapp:casement' %}">Casement</a></li>
                                <li><a class="dropdown-item" href="{% url 'winapp:sliding' %}">Sliding</a></li>
                             </ul>
                             </li>
-                            <li><a class="dropdown-item" href="#">Super Specialised System &raquo </a>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Super Specialised System</a>
                                <ul class="submenu dropdown-menu">
                                 <li><a class="dropdown-item" href="{% url 'winapp:lift' %}">Lift & Slide</a></li>
                                 <li><a class="dropdown-item" href="{% url 'winapp:tilt' %}">Tilt & Turn</a></li>
@@ -173,6 +146,24 @@
         AOS.init();
 
     </script>
+
+    <script type="text/javascript">
+      $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+      if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+      }
+      var $subMenu = $(this).next('.dropdown-menu');
+      $subMenu.toggleClass('show');
+  
+  
+      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass('show');
+      });
+  
+  
+      return false;
+      });
+      </script>
 
 </body>
 </html>
