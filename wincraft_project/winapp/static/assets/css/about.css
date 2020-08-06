@@ -1,9 +1,18 @@
 #review {
-  margin-top: 40px;
+  padding: 20px;
 }
 
 h1, h2{
   color: black;
+}
+
+#icon{
+  padding: 20px;
+  border-top: solid black 1px;
+}
+
+#one, #review, #icon{
+  background-color: white;
 }
 
 .review-heading {
@@ -53,8 +62,6 @@ h1, h2{
 .icon-heading {
   text-align: center;
   font-size: 1.75rem;
-  margin-top: 48px;
-  margin-bottom: 48px;
 }
 
 .container-icon {
