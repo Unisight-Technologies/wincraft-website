@@ -4,15 +4,31 @@ from . import models
 from django.contrib import messages
 from django.core.mail import send_mail
 
-def sendMail(name, send_to):
+def sendMailToUser(name, send_to):
     subject = "Regarding query sent on Wincraft Buildmat's Website"
     message = "Hello "+name+"! \n\nWe have successfully received your query.\nWe are glad that you tried to connect with us.\n\nWe will get back to you as soon as possible.\n\nRegards\n-Team Wincraft Buildmat"
     send_mail(
-    subject,
-    message,
-    'teamurbaninsight@gmail.com',
-    [send_to],
-    fail_silently = False,
+        subject,
+        message,
+        'teamurbaninsight@gmail.com',
+        [send_to],
+        fail_silently = False,
+    )
+
+def sendMailToWincraft(name, email_phone, query):
+    message = ""
+    if '@' in email_phone:
+        message = "The following query has been received on our website:\n\nName: "+name+"\nEmail Id: "+email_phone+"\nQuery: "+query+"\n\nRegards"
+    else:
+        message = "The following query has been received on our website:\n\nName: "+name+"\nPhone number: "+email_phone+"\nQuery: "+query+"\n\nRegards"
+    subject = "A query has been received on Wincraft Buildmat"
+    send_mail(
+        subject,
+        message,
+        'teamurbaninsight@gmail.com',
+        ['parmarnaitik0909@gmail.com'],
+        fail_silently = False,
+
     )
 
 
@@ -34,7 +50,8 @@ class Homepage(View):
                     query=query
                 )
                 new_query.save()
-                sendMail(name, email_phone)
+                sendMailToUser(name, email_phone)
+                sendMailToWincraft(name, email_phone, query)
                 messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
                 return redirect("index")
 
@@ -45,6 +62,7 @@ class Homepage(View):
                     query=query
                 )
                 new_query.save()
+                sendMailToWincraft(name, email_phone, query)
                 messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
                 return redirect("index")
 
