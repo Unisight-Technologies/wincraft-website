@@ -2,6 +2,19 @@ from django.shortcuts import render, redirect
 from django.views.generic import View
 from . import models
 from django.contrib import messages
+from django.core.mail import send_mail
+
+def sendMail(name, send_to):
+    subject = "Regarding query sent on Wincraft Buildmat's Website"
+    message = "Hello "+name+"! \n\nWe have successfully received your query.\nWe are glad that you tried to connect with us.\n\nWe will get back to you as soon as possible.\n\nRegards\n-Team Wincraft Buildmat"
+    send_mail(
+    subject,
+    message,
+    'teamurbaninsight@gmail.com',
+    [send_to],
+    fail_silently = False,
+    )
+
 
 class Homepage(View):
     def get(self, request, *args, **kwargs):
@@ -21,6 +34,7 @@ class Homepage(View):
                     query=query
                 )
                 new_query.save()
+                sendMail(name, email_phone)
                 messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
                 return redirect("index")
 
