@@ -6146,7 +6146,9 @@ a.close.disabled {
 
 .carousel-control-next, .carousel-control-prev {
   position: absolute;
+  background-color: black;
   top: 0;
+  height: 30%;
   bottom: 0;
   z-index: 1;
   display: -ms-flexbox;
