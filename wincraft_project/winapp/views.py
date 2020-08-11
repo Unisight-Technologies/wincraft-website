@@ -26,7 +26,7 @@ def sendMailToWincraft(name, email_phone, query):
         subject,
         message,
         'teamurbaninsight@gmail.com',
-        ['parmarnaitik0909@gmail.com'],
+        ['wincraftbuildmat@gmail.com'],
         fail_silently = False,
 
     )
