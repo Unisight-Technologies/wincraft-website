@@ -34,10 +34,50 @@ h4, p{
 
 }
 
+.inner{
+  text-align: center;
+}
+
 .zoom{
   width: 400px;
 }
 
 .fixed{
   overflow: hidden;
+}
+
+/* bootstrap carousel */
+.carousel-inner{
+  width: auto;
+}
+.spotlight .image img{
+  width: 200px;
+}
+
+@media only screen and (min-width: 800px){
+.carousel-control-next, .carousel-control-prev{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+}
+
+carousel-img{
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .carousel-control-next, .carousel-control-prev {
+    margin-top: 20%;
+  }
+}
+
+.carousel-item{
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 980px){
+#main .image img{
+    width:50%;
+}
 }
