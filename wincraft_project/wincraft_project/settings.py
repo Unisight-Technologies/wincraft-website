@@ -97,6 +97,22 @@ DATABASES = {
     }
 }
 
+# MySql database setup
+
+# DATABASES = {
+#     'default': {
+#         'NAME': 'hms',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'USER': 'root',
+#         'PORT': '3306',
+#         'PASSWORD': 'bulbul123',
+#         'OPTIONS': {
+#           'autocommit': True,
+#         },
+#     }
+# }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
