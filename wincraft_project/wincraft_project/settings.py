@@ -29,12 +29,12 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = '8gpu8k)x=-j^)s7j9@&)8cd@^e&$82d-uz%_=(t&zpjmucd$(n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if socket.gethostname() == 'ip-172-31-36-15':
+if socket.gethostname() == 'ip-172-31-44-213':
     DEBUG = False
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-3-19-213-170.us-east-2.compute.amazonaws.com', '127.0.0.1']
+ALLOWED_HOSTS = ['ec2-13-232-4-11.ap-south-1.compute.amazonaws.com', '127.0.0.1']
 
 
 # Application definition
