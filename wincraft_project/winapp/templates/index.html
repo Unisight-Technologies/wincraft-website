@@ -4,7 +4,7 @@
 {% block body_block %}
   <header id="header">
     <!-- alert-messages -->
-                      <div style="width:100%" class="row">
+                      <div style="width:100%; margin-left: 1px;" class="row">
                         {% if messages %}
                             {% for message in messages %}
                             <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
@@ -136,7 +136,8 @@
     <form id="query-form-id" name="query-form" method="POST" onsubmit="return validateData()">{% csrf_token %}
 
       <input class="w3-input" type="text" placeholder="Name" required name="name" style="color:black">
-      <input class="w3-input w3-section" type="text" placeholder="Phone number/Email" required name="email_phone" style="color:black">
+      <input class="w3-input w3-section" type="email" placeholder="Email" required name="email" style="color:black">
+      <input class="w3-input w3-section" type="text" placeholder="Phone Number" required name="phone" style="color:black">
       <!-- < class="w3-input w3-section" type="text" placeholder="Query" required name="query" style="color:black"> -->
       <textarea class="w3-section" type="text" name="query" required rows="8" cols="80" placeholder="Your query"></textarea>
       <button style="background-color: black;" class="btn btn-primary btn-lg btn-default" type="submit">

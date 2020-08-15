@@ -15,12 +15,8 @@ def sendMailToUser(name, send_to):
         fail_silently = False,
     )
 
-def sendMailToWincraft(name, email_phone, query):
-    message = ""
-    if '@' in email_phone:
-        message = "The following query has been received on our website:\n\nName: "+name+"\nEmail Id: "+email_phone+"\nQuery: "+query+"\n\nRegards"
-    else:
-        message = "The following query has been received on our website:\n\nName: "+name+"\nPhone number: "+email_phone+"\nQuery: "+query+"\n\nRegards"
+def sendMailToWincraft(name, email, phone, query):
+    message = "The following query has been received on our website:\n\nName: "+name+"\nEmail Id: "+email+"\nPhone Number: "+phone+"\nQuery: "+query+"\n\nRegards"
     subject = "A query has been received on Wincraft Buildmat"
     send_mail(
         subject,
@@ -40,31 +36,21 @@ class Homepage(View):
     def post(self, request, *args, **kwargs):
             form = request.POST
             name = form.get('name')
-            email_phone = form.get('email_phone')
+            email = form.get('email')
+            phone = form.get('phone')
             query = form.get('query')
 
-            if '@' in email_phone:
-                new_query = models.Queries.objects.create(
+            new_query = models.Queries.objects.create(
                     name=name,
-                    email=email_phone,
+                    email=email,
+                    phone=phone,
                     query=query
                 )
-                new_query.save()
-                sendMailToUser(name, email_phone)
-                sendMailToWincraft(name, email_phone, query)
-                messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
-                return redirect("index")
-
-            else:
-                new_query = models.Queries.objects.create(
-                    name=name,
-                    phone=email_phone,
-                    query=query
-                )
-                new_query.save()
-                sendMailToWincraft(name, email_phone, query)
-                messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
-                return redirect("index")
+            new_query.save()
+            sendMailToUser(name, email)
+            sendMailToWincraft(name, email, phone, query)
+            messages.success(request, "Your query has been successfully submitted. We will get back to you soon.")
+            return redirect("index")
 
 class ProjectsPage(View):
 
