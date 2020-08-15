@@ -2379,7 +2379,6 @@ select.form-control[multiple], select.form-control[size], textarea.form-control 
 
 .btn.focus, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 .2rem rgba(66, 220, 163, .25)
 }
 
 .btn.disabled, .btn:disabled {
@@ -2403,7 +2402,6 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-primary.focus, .btn-primary:focus {
-  box-shadow: 0 0 0 .2rem rgba(61, 193, 145, .5)
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2414,8 +2412,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #25c68a;
-  border-color: #23bc83
+
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
