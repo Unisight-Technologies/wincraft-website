@@ -16,7 +16,7 @@ function validateData(){
     }
   }
   else{
-    alert("Please enter a valid phone number");
+    alert("Please enter a 10-digit phone number");
     return false;
   }
 }
