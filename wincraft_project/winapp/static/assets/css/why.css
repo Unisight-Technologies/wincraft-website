@@ -1,0 +1,127 @@
+#review {
+    padding: 20px;
+  }
+  
+  h1, h2{
+    color: black;
+  }
+  
+  #icon{
+    padding: 20px;
+    border-top: solid black 1px;
+  }
+  
+  #one, #review, #icon{
+    background-color: white;
+  }
+  
+  .review-heading {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+  
+  .container-review {
+    background-color: rgba(2, 149, 218, 0.1);
+    border-radius: 5px;
+    padding: 25px;
+    margin: 46px 20px;
+    height: 230px;
+  }
+  
+  .container-review img {
+    float: left;
+    margin-right: 35px;
+    border-radius: 50%;
+  }
+  
+  .container-review-heading {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .container-review-content {
+    color: black;
+  }
+  
+  /* Adding media queries for responsiveness. */
+  @media (max-width: 500px) {
+    .container-review {
+      text-align: center;
+      height: 500px;
+    }
+  
+    .container-review img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+  
+  .icon-heading {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  
+  .container-icon {
+    height: 250px;
+  }
+  
+  .spotlight{
+    color: black;
+  }
+  
+  .content{
+  color: black
+  
+  }
+  
+  
+  /* Style all font awesome icons */
+  .footer-icon {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+   border-radius: 50%;
+   margin-right: 20px;
+  
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+  opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+  }
+  /*Insta*/
+  .fa-instagram {
+    background: #D62976;
+    color: white;
+  }
+  
+  
+  /* Linkedin*/
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-envelope {
+    background: #d64d3f;
+    color: white;
+  }
+  .fa-phone {
+    background: #a4c639;
+    color: white;
+  }
+  
+  .aligncenter{
+    border: #0295DA 2px solid;
+  }
+  
