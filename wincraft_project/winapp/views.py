@@ -45,6 +45,10 @@ class ProductsPage(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'products.html')
 
+class WhyUs(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(request, 'why_wincraft.html')
 
 
 def casement(request):

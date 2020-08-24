@@ -23,4 +23,5 @@ urlpatterns = [
     path('projects/', views.ProjectsPage.as_view(), name="projects"),
     path('about/', views.AboutPage.as_view(), name="about"),
     path('products/', include('winapp.urls')),
+    path('why_us/', views.WhyUs.as_view(), name="why_wincraft"),
 ]
