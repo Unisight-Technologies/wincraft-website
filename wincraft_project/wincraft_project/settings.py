@@ -35,7 +35,7 @@ if socket.gethostname() == 'ip-172-31-44-213':
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-13-232-4-11.ap-south-1.compute.amazonaws.com', '127.0.0.1']
+ALLOWED_HOSTS = ['ec2-13-232-4-11.ap-south-1.compute.amazonaws.com', '127.0.0.1', 'www.wincraftbuildmat.com', 'wincraftbuildmat.com']
 
 
 # Application definition
