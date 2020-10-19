@@ -1,5 +1,8 @@
 from django.core.mail import send_mail
+import environ
 
+env = environ.Env()
+environ.Env.read_env()
 
 def sendMailToUser(name, send_to):
     subject = "Regarding query sent on Wincraft Buildmat's Website"
@@ -7,7 +10,7 @@ def sendMailToUser(name, send_to):
     send_mail(
         subject,
         message,
-        'teamurbaninsight@gmail.com',
+        env("EMAIL"),
         [send_to],
         fail_silently = False,
     )
@@ -18,7 +21,7 @@ def sendMailToWincraft(name, email, phone, query):
     send_mail(
         subject,
         message,
-        'teamurbaninsight@gmail.com',
+        env("EMAIL"),
         ['wincraftbuildmat@gmail.com'],
         fail_silently = False,
 
