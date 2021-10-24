@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import socket
 import environ
+import django_heroku
 
 env = environ.Env()
 # reading .env file
@@ -35,7 +36,16 @@ if socket.gethostname() == 'ip-172-31-44-213':
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-13-232-4-11.ap-south-1.compute.amazonaws.com', '127.0.0.1', 'www.wincraftbuildmat.com', 'wincraftbuildmat.com']
+DEBUG = False
+
+ALLOWED_HOSTS = [
+    'ec2-13-232-4-11.ap-south-1.compute.amazonaws.com', 
+    '127.0.0.1', 
+    'www.wincraftbuildmat.com', 
+    'wincraftbuildmat.com',
+    'wincraft.unisight.in',
+    'wincraft.herokuapp.com'
+    ]
 
 
 # Application definition
@@ -152,3 +162,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())

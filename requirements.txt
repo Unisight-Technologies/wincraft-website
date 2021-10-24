@@ -2,3 +2,4 @@ django
 django-environ
 gunicorn
 mysqlclient
+django-heroku
